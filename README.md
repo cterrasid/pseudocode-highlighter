@@ -1,4 +1,4 @@
-# uoc-pseudocode-highlighter README
+# pseudocode-highlighter README
 
 This is the README for your extension "uoc-pseudocode-highlighter". After writing up a brief description, we recommend including the following sections.
 

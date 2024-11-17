@@ -1,7 +1,7 @@
 {
-  "name": "uoc-pseudocode-highlighter",
-  "displayName": "uoc-pseudocode-highlighter",
-  "description": "Extension for highlighting UOC pseudocode syntax",
+  "name": "pseudocode-highlighter",
+  "displayName": "pseudocode-highlighter",
+  "description": "Extension for highlighting pseudocode syntax",
   "version": "1.0.0",
   "engines": {
     "vscode": "^1.95.0"
