@@ -1,0 +1,26 @@
+{
+  "Algorithm Template": {
+    "prefix": "algorithm",
+    "body": [
+      "algorithm ${1:AlgorithmName}",
+      "    var",
+      "        ${2:variables}",
+      "    end var",
+      "",
+      "    {Code logic here}",
+      "end algorithm"
+    ],
+    "description": "Basic template for an algorithm"
+  },
+  "If-Else Template": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition} then",
+      "    ${2:statements}",
+      "else",
+      "    ${3:statements}",
+      "end if"
+    ],
+    "description": "Template for if-else structure"
+  }
+}

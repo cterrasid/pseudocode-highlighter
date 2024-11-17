@@ -1,0 +1,25 @@
+{
+  "scopeName": "source.pseudocode",
+  "patterns": [
+    {
+      "match": "\\b(const|type|record|algorithm|end const|end type|end record|end algorithm|var|end var|if|then|else|end if)\\b",
+      "name": "keyword.control.pseudocode"
+    },
+    {
+      "match": "\\b(integer|real|string|boolean|vector)\\b",
+      "name": "storage.type.pseudocode"
+    },
+    {
+      "match": "\\b(MAX_[A-Z_]+|MIN_[A-Z_]+|[A-Z_]+_WEIGHT)\\b",
+      "name": "constant.language.pseudocode"
+    },
+    {
+      "match": ":=",
+      "name": "keyword.operator.assignment.pseudocode"
+    },
+    {
+      "match": "\\{.*?\\}",
+      "name": "comment.block.pseudocode"
+    }
+  ]
+}
