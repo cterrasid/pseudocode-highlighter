@@ -23,6 +23,15 @@
     ],
     "description": "Template for if-else structure"
   },
+  "If Template": {
+    "prefix": "if",
+    "body": [
+      "if ${1:condition} then",
+      "    ${2:statements}",
+      "end if"
+    ],
+    "description": "Template for if structure"
+  },
   "While-Do Template": {
     "prefix": "while",
     "body": [
@@ -49,5 +58,32 @@
       "end var"
     ],
     "description": "Template for variables creation"
+  },
+  "Constant Template": {
+    "prefix": "const",
+    "body": [
+      "const",
+      "    ${1:constants}",
+      "end const"
+    ],
+    "description": "Template for constants creation"
+  },
+  "Type Template": {
+    "prefix": "type",
+    "body": [
+      "type",
+      "    ${1:constants}",
+      "end type"
+    ],
+    "description": "Template for type definition"
+  },
+  "Record Template": {
+    "prefix": "record",
+    "body": [
+      "record",
+      "    ${1:constants}",
+      "end record"
+    ],
+    "description": "Template for record definition"
   }
 }

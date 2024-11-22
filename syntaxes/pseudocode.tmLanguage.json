@@ -2,16 +2,12 @@
   "scopeName": "source.pseudocode",
   "patterns": [
     {
-      "match": "\\b(const|type|record|algorithm|end const|end type|end record|end algorithm|var|end var|if|then|else|end if)\\b",
+      "match": "\\b(const|type|record|algorithm|end const|end type|end record|end algorithm|var|end var|if|then|else|end if|for|while|do|end for|end while|return)\\b",
       "name": "keyword.control.pseudocode"
     },
     {
-      "match": "\\b(integer|real|string|boolean|vector)\\b",
+      "match": "\\b(integer|real|string|boolean|vector|t[A-Z][a-zA-Z]*)\\b",
       "name": "storage.type.pseudocode"
-    },
-    {
-      "match": "\\b(MAX_[A-Z_]+|MIN_[A-Z_]+|[A-Z_]+_WEIGHT)\\b",
-      "name": "constant.language.pseudocode"
     },
     {
       "match": ":=",
@@ -20,6 +16,36 @@
     {
       "match": "\\{.*?\\}",
       "name": "comment.block.pseudocode"
+    },
+    {
+      "name": "entity.name.type.pseudocode",
+      "begin": "\\b(type)\\b",
+      "end": "\\bend\\b",
+      "patterns": [
+        {
+          "match": "\\b[A-Z][a-zA-Z_]*\\b(?=\\s*=)",
+          "name": "entity.name.enum.pseudocode"
+        },
+        {
+          "match": "\\{[A-Z_,\\s]+\\}",
+          "name": "variable.other.enummember.pseudocode"
+        }
+      ]
+    },
+    {
+      "name": "meta.record.pseudocode",
+      "begin": "\\b(record)\\b",
+      "end": "\\bend\\b",
+      "patterns": [
+        {
+          "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*\\b(?=\\:)",
+          "name": "variable.other.field.pseudocode"
+        },
+        {
+          "match": "\\b(integer|real|string|boolean|vector|t[A-Z][a-zA-Z]*)\\b",
+          "name": "storage.type.field.pseudocode"
+        }
+      ]
     }
   ]
 }
