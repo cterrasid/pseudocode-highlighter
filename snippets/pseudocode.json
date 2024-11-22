@@ -30,7 +30,16 @@
       "    ${2:statements}",
       "end while"
     ],
-    "description": "Template for while-do structure"
+    "description": "Template for while-do cycle"
+  },
+  "For-To-Do Template": {
+    "prefix": "for",
+    "body": [
+      "for ${1:condition} to ${2:condition} do",
+      "    ${3:statements}",
+      "end for"
+    ],
+    "description": "Template for for-to-do cycle"
   },
   "Variable Template": {
     "prefix": "var",
