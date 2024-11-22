@@ -2,7 +2,7 @@
   "name": "pseudocode-highlighter",
   "displayName": "pseudocode-highlighter",
   "description": "Extension for highlighting pseudocode syntax",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "publisher": "cterrasid",
   "engines": {
     "vscode": "^1.95.0"
