@@ -22,5 +22,23 @@
       "end if"
     ],
     "description": "Template for if-else structure"
+  },
+  "While-Do Template": {
+    "prefix": "while",
+    "body": [
+      "while ${1:condition} do",
+      "    ${2:statements}",
+      "end while"
+    ],
+    "description": "Template for while-do structure"
+  },
+  "Variable Template": {
+    "prefix": "var",
+    "body": [
+      "var",
+      "    ${1:variables}",
+      "end var"
+    ],
+    "description": "Template for variables creation"
   }
 }
