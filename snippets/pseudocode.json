@@ -85,5 +85,24 @@
       "end record"
     ],
     "description": "Template for record definition"
+  },
+  "Function Template": {
+    "prefix": "function",
+    "body": [
+      "function ${1:name} (${2:params})",
+      "    ${3:content}",
+      "    return ${4:result}",
+      "end function"
+    ],
+    "description": "Template for functions"
+  },
+  "Action Template": {
+    "prefix": "action",
+    "body": [
+      "action ${1:name} (${2:params})",
+      "    ${3:content}",
+      "end action"
+    ],
+    "description": "Template for actions"
   }
 }

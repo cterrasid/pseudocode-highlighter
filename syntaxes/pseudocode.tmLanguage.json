@@ -2,7 +2,7 @@
   "scopeName": "source.pseudocode",
   "patterns": [
     {
-      "match": "\\b(const|type|record|algorithm|end const|end type|end record|end algorithm|var|end var|if|then|else|end if|for|while|do|end for|end while|return)\\b",
+      "match": "\\b(function|const|type|record|algorithm|end function|end const|end type|end record|end algorithm|var|end var|if|then|else|end if|for|while|do|end for|end while|return)\\b",
       "name": "keyword.control.pseudocode"
     },
     {
@@ -46,6 +46,21 @@
           "name": "storage.type.field.pseudocode"
         }
       ]
+    },
+    {
+      "name": "storage.type.enum.pseudocode",
+      "begin": "=\\s*\\{",
+      "end": "\\}",
+      "patterns": [
+        {
+          "match": "[^,\\s]+",
+          "name": "constant.language.enum.member.pseudocode"
+        }
+      ]
+    },
+    {
+      "match": "\\{.*?\\}",
+      "name": "comment.block.pseudocode"
     }
   ]
 }

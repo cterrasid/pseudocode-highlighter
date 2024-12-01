@@ -2,7 +2,7 @@
   "name": "pseudocode-highlighter",
   "displayName": "pseudocode-highlighter",
   "description": "Extension for highlighting pseudocode syntax",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "publisher": "cterrasid",
   "engines": {
     "vscode": "^1.95.0"
@@ -10,14 +10,16 @@
   "categories": [
     "Programming Languages"
   ],
-  "activationEvents": [],
+  "activationEvents": [
+    "onLanguage:pseudocode"
+  ],
   "main": "./extension.js",
   "contributes": {
     "languages": [
       {
         "id": "pseudocode",
         "aliases": ["Pseudocode", "pseudocode"],
-        "extensions": [".pcode"],
+        "extensions": [".pcode", ".pseudo"],
         "configuration": "./language-configuration.json"
       }
     ],

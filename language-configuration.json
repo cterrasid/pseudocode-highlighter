@@ -17,7 +17,7 @@
     { "open": "[", "close": "]" }
   ],
   "indentationRules": {
-    "increaseIndentPattern": "^.*\\b(var|type|record|algorithm|if|then)\\b.*$",
-    "decreaseIndentPattern": "^\\s*(end var|end type|end record|end algorithm|end if)\\b.*$"
+    "increaseIndentPattern": "^.*\\b(var|type|record|algorithm|if|then|function|action)\\b.*$",
+    "decreaseIndentPattern": "^\\s*(end var|end type|end record|end algorithm|end if|end function|end action)\\b.*$"
   }
 }
