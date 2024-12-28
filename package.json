@@ -2,7 +2,7 @@
   "name": "pseudocode-highlighter",
   "displayName": "pseudocode-highlighter",
   "description": "Extension for highlighting pseudocode syntax",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "publisher": "cterrasid",
   "engines": {
     "vscode": "^1.95.0"
@@ -34,6 +34,13 @@
       {
         "language": "pseudocode",
         "path": "./snippets/pseudocode.json"
+      }
+    ],
+    "themes": [
+      {
+        "label": "Pseudocode Color Theme",
+        "uiTheme": "vs",
+        "path": "./themes/pseudocode-color-theme.json"
       }
     ]
   },

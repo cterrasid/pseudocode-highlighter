@@ -1,0 +1,58 @@
+{
+    "name": "Pseudocode Color Theme",
+    "type": "dark",
+    "tokenColors": [
+      {
+        "scope": "keyword.control.pseudocode",
+        "settings": {
+          "foreground": "#FF79C6", 
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "storage.type.pseudocode",
+        "settings": {
+          "foreground": "#BD93F9",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "support.function.internal.pseudocode",
+        "settings": {
+          "foreground": "#50FA7B"
+        }
+      },
+      {
+        "scope": "comment.block.pseudocode",
+        "settings": {
+          "foreground": "#6272A4",
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "constant.language.enum.member.pseudocode",
+        "settings": {
+          "foreground": "#FFB86C"
+        }
+      },
+      {
+        "scope": "string.quoted.double.pseudocode",
+        "settings": {
+          "foreground": "#F1FA8C"
+        }
+      },
+      {
+        "scope": "keyword.operator.pseudocode",
+        "settings": {
+          "foreground": "#FF5555"
+        }
+      },
+      {
+        "scope": "variable.other.pseudocode",
+        "settings": {
+          "foreground": "#8BE9FD"
+        }
+      }
+    ]
+  }
+  

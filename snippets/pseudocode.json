@@ -2,12 +2,16 @@
   "Algorithm Template": {
     "prefix": "algorithm",
     "body": [
-      "algorithm ${1:AlgorithmName}",
+      "algorithm ${1:name}",
       "    var",
       "        ${2:variables}",
       "    end var",
       "",
+      "    {Initialize variables}",
+      "    ${3:initialization}",
+      "",
       "    {Code logic here}",
+      "    ${4:logic}",
       "end algorithm"
     ],
     "description": "Basic template for an algorithm"
@@ -44,7 +48,7 @@
   "For-To-Do Template": {
     "prefix": "for",
     "body": [
-      "for ${1:condition} to ${2:condition} do",
+      "for ${1:i} to ${2:limit} do",
       "    ${3:statements}",
       "end for"
     ],
